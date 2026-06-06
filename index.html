@@ -1,20 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Meander Web — Coming Soon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meander Web — Local Business Websites</title>
   <style>
-    body { font-family: sans-serif; display: flex; 
-           justify-content: center; align-items: center; 
-           height: 100vh; margin: 0; background: #0f172a; color: #f8fafc; }
-    h1 { font-size: 2.5rem; }
-    p  { color: #94a3b8; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0f1e;
+      color: #f1f5f9;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      max-width: 600px;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: #38bdf8;
+      margin: 0 auto 2.5rem;
+    }
+
+    .message {
+      font-size: 1rem;
+      color: #64748b;
+      margin-bottom: 2rem;
+    }
+
+    .contact {
+      display: inline-block;
+      padding: 0.75rem 1.75rem;
+      background: #38bdf8;
+      color: #0a0f1e;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+
+    .contact:hover { background: #7dd3fc; }
   </style>
 </head>
 <body>
-  <div style="text-align:center">
-    <h1>Meander Web</h1>
-    <p>Something great is coming.</p>
-    <p>📧 hello@meanderweb.com</p>
+  <div class="container">
+    <div class="logo">Meander<span>Web</span></div>
+    <div class="divider"></div>
+    <p class="tagline">
+      We build websites for local businesses that deserve to be found.
+    </p>
+    <p class="message">Full site launching soon.</p>
+    <a class="contact" href="mailto:hello@meanderweb.com">
+      Get in touch
+    </a>
   </div>
 </body>
 </html>
